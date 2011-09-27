@@ -30,11 +30,20 @@
 <!-- view="plone.app.layout.globals.interfaces.IViewView" -->
 
   <browser:viewlet
-      name="collective.facebookcomments.FacebookComments"
+      name="collective.facebookcomments.comments"
       manager="plone.app.layout.viewlets.interfaces.IBelowContent"
-      class=".viewlet.FacebookComments"
+      class=".viewlets.FacebookComments"
       permission="zope2.View"
       />
+
+  <browser:viewlet
+    name="collective.facebookcomments.metatag"
+    manager="plone.app.layout.viewlets.interfaces.IHtmlHead"
+    class=".viewlets.Metatag"
+    permission="zope2.View"
+    />
+
+
 
     <browser:page
         name="facebookcomments-settings"
