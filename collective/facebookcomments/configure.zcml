@@ -14,6 +14,8 @@
 
   <includeDependencies package="." />
 
+  <include package="plone.app.registry" />
+
   <i18n:registerTranslations directory="locales" />
 
   <!-- Register an extension profile to make the product installable
@@ -34,6 +36,12 @@
       permission="zope2.View"
       />
 
+    <browser:page
+        name="facebookcomments-settings"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        class=".controlpanel.FacebookCommentsSettingsControlPanel"
+        permission="cmf.ManagePortal"
+        />
 
   <!-- -*- extra stuff goes here -*- -->
 

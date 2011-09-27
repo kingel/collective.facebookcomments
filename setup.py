@@ -26,7 +26,7 @@ setup(name='collective.facebookcomments',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'plone.app.dexterity',
+          'plone.app.registry',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
