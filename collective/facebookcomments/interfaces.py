@@ -17,3 +17,9 @@ class IFacebookCommentsSettings(Interface):
                                   required=False,
                                   default=u'',)
 
+    portal_types = schema.List(title=_(u"Show comments for"),
+                                description=_(u"For which contenttypes should we show the comments box"),
+                                value_type=schema.Choice(vocabulary=u"collective.facebookcomments.content_types"),
+                                )
+
+

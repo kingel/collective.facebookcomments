@@ -18,9 +18,15 @@ class FacebookComments(BrowserView):
         self.request = request
         self.__parent__ = view
         self.manager = manager
+        registry = getUtility(IRegistry)
+        self.settings = registry.forInterface(IFacebookCommentsSettings)
+
 
     def update(self):
         pass
+
+    def available(self):
+        return self.context.portal_type in self.settings.portal_types
 
     render = ViewPageTemplateFile("facebook_comments.pt")
 

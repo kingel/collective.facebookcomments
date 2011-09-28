@@ -1,3 +1,4 @@
+<tal:block tal:condition="view/available" >
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -8,4 +9,4 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <div class="fb-comments" tal:attributes="data-href here/absolute_url" data-num-posts="2" data-width="500"></div>
-
+</tal:block>

@@ -52,6 +52,11 @@
         permission="cmf.ManagePortal"
         />
 
+    <utility
+        provides="zope.schema.interfaces.IVocabularyFactory"
+        component=".vocabularies.content_types_vocabulary"
+        name="collective.facebookcomments.content_types"
+        />
   <!-- -*- extra stuff goes here -*- -->
 
 </configure>
