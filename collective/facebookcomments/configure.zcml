@@ -34,6 +34,7 @@
       manager="plone.app.layout.viewlets.interfaces.IBelowContent"
       class=".viewlets.FacebookComments"
       permission="zope2.View"
+      view="plone.app.layout.globals.interfaces.IViewView"
       />
 
   <browser:viewlet
@@ -41,6 +42,7 @@
     manager="plone.app.layout.viewlets.interfaces.IHtmlHead"
     class=".viewlets.Metatag"
     permission="zope2.View"
+    view="plone.app.layout.globals.interfaces.IViewView"
     />
 
 
