@@ -35,6 +35,7 @@
       class=".viewlets.FacebookComments"
       permission="zope2.View"
       view="plone.app.layout.globals.interfaces.IViewView"
+      layer=".interfaces.IFacebookCommentsLayer"
       />
 
   <browser:viewlet
@@ -43,6 +44,7 @@
     class=".viewlets.Metatag"
     permission="zope2.View"
     view="plone.app.layout.globals.interfaces.IViewView"
+    layer=".interfaces.IFacebookCommentsLayer"
     />
 
 

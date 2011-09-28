@@ -5,6 +5,9 @@ from zope.i18nmessageid import MessageFactory
 
 _ = MessageFactory('collective.facebookcomments')
 
+class IFacebookCommentsLayer(Interface):
+    """A layer specific to my package
+    """
 
 class IFacebookCommentsSettings(Interface):
     """Global facebookcomments settings. This describes records stored in the

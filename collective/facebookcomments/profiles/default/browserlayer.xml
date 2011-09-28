@@ -1,0 +1,5 @@
+<layers>
+     <layer name="FacebookCommentsLayer"
+            interface="collective.facebookcomments.interfaces.IFacebookCommentsLayer"
+            />
+</layers>
